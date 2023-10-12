@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pacientes</title>
+    <!-- Incluye la biblioteca de Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Registro de Pacientes</h1>
+        <form>
+            <div class="form-group">
+                <label for="fecha-nacimiento">Fecha:</label>
+                <input type="date" class="form-control" id="fecha-nacimiento">
+            </div>
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre del paciente">
+                </div>
+                <div class="form-group col">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido del paciente">
+                </div>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group col">
+                    <label for="estado_civil">Estado Civil:</label>
+                    <select class="form-control" id="estado_civil">
+                        <option value="soltero">Soltero</option>
+                        <option value="casado">Casado</option>
+                        <option value="viudo">Viudo</option>
+                        <option value="divorciado">Divorciado</option>
+                    </select>
+                </div>
+
+                <div class="form-group col">
+                    <label for="dni">DNI:</label>
+                    <input type="text" class="form-control" id="dni" placeholder="Numero de Dni">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="genero">Género:</label>
+                    <select class="form-control" id="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <label for="edad">EDAD:</label>
+                    <input type="text" class="form-control" id="edad" placeholder="Edad actual">
+                </div>
+                <div class="form-group col">
+                    <label for="num_hijos">NUM. DE HIJOS:</label>
+                    <input type="text" class="form-control" id="num_hijos" placeholder="Cantidad de hijos">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="lugar_residencia">Lugar de Residencia:</label>
+                    <input type="text" class="form-control" id="lugar_residencia" placeholder="Localidad en la que reside actualmente">
+                </div>
+                <div class="form-group col">
+                    <label for="profesion">Profesion:</label>
+                    <input type="text" class="form-control" id="profesion" placeholder="Profesion">
+                </div>
+            </div>
+
+
+
+            <div class="text-center">
+                <a href="Acuerdo_ingreso.html" class="btn btn-primary mx-auto">Registrar Paciente
+                </a>
+            </div>
+        </form>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript para establecer la fecha actual en el campo de fecha
+        const fechaActual = new Date().toISOString().split('T')[0];
+        document.getElementById('fecha-nacimiento').value = fechaActual;
+    </script>
+</body>
+</html>

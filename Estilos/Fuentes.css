@@ -1,0 +1,20 @@
+.subtitulo{
+    font-size: 30px;
+    font-weight: bold;
+}
+.logotipo{
+    width: 8%;
+}
+
+.logotipo2{
+    width: 10%;
+}
+
+/* En tu archivo CSS */
+.card {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    /* Otros estilos de tu elección */
+}

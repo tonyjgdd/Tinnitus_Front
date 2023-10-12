@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pacientes</title>
+    <!-- Incluye la biblioteca de Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/Fuentes.css">
+</head>
+<body>
+    <div id="card" class="card">
+        <div class="container text-center">
+            <img src="img/Logo_tinnitus.png" alt="Logo_tinnitus" class="img-fluid float-right logotipo2">
+            <img class="logotipo" src="img/Logo_Acuerdo.png" alt="acuero_manos" class="img-fluid">
+            <h2 class="subtitulo">ACUERDO DE INGRESO</h2>
+        
+          
+
+        </div>
+    </div>
+          
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <div class="border p-2">
+                       <p>
+                        <b>
+                            Cuando una persona busca Terapia de Reentrenamiento de Tinnitus (TRT) y cuando un profesional de Tinnitus Perú acepta a un miembro, 
+                            es esencial que ambos deseen y trabajen sobre lo mismos objetivos. La TRT tiene una meta, es importante entenderla, 
+                            así como entender los medios que estas utiliza para alcanzarla. De esta manera no existirá ningún tipo de confusión malentendido o decepción.
+                         </b>
+                       </p> 
+                       <p>
+                        Primero el miembro debe entender que la TRT no es un sustito de los tratamientos médicos de ningún tipo, en ningún sentido y por ninguna razón. Usualmente los pacientes quieren deshacerse de cualquier dolencia,
+                         síntoma o condición que los aqueja sin embargo esta no es la meta de la TRT. La TRT no es orientada a CURAR la Tinnitus, está orientada como tratamiento de adaptación para reducción de molestias por zumbidos.
+La Terapia de Reentrenamiento para el Tinnitus (TRT) es una técnica de adaptación destinada a disminuir el impacto auditivo, emocional y autónomo del ruido del Tinnitus y, así, reducir la respuesta de estrés al estímulo del Tinnitus.
+ El TRT se puede considerar para su uso como técnica de intervención a largo plazo en el tratamiento de adaptabilidad al Tinnitus;<b>NO ES UNA CURA,</b>  asimismo, utiliza la psicología y las terapias conductuales para desarrollar estrategias que mitigan la ansiedad y estrés relacionado con esta enfermedad.
+                       </p>
+                       <p>
+                        El objetivo principal de las Terapias de Reentrenamiento de Tinnitus es la habituación a la reacción del paciente hacia el Tinnitus. Con una habituación exitosa en un mediano plazo, el Tinnitus ya no impacta negativamente la vida del individuo, aunque todavía se percibe a diferentes intensidades (dB) y frecuencias (Hertz). 
+                       </p>
+                       <p>
+                        La Tinnitus al tener diagnóstico crónico siempre va existir en su sistema auditivo y sus intensidades de volumen siempre serán estocásticas y varían según la exposición o control que tenga el paciente, por ello es importante recalcar que durante y luego de finalizado el tratamiento usted deberá emplear las herramientas enseñadas para que el zumbido no afecte su día a día, aún en días estresantes y con alta carga emocional el uso de estas herramientas debe permitir que su Tinnitus no se le vaya de las manos y afecte su Vida. 
+                       </p>
+                       <p>
+                        La información que recibimos de usted es muy importante solo preguntamos lo que es necesario para nuestro Centro Auditivo. Por esta razón complete la siguiente hoja de datos. Si tiene alguna pregunta o piensa que hay alguna información que debemos saber, por favor dígasela al profesional de Tinnitus Perú.
+                       </p>
+                       <p class="text-center">
+                        <b>
+                            ¡BIENVENIDIOS A TINNITUS PERÚ!
+                        </b>
+                       </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="card border-dark rounded">
+            <div class="card-body">
+                <p class="card-text">*Recuerde que los nuevos miembros deben tener orientación antes de empezar la TRT. En caso contrario no podrá ser atendido.*</p>
+                <p>
+                    POR FAVOR ESCRIBA CLARAMENTE...
+                </p>
+                <br><br>
+                <div class="form-group row">
+                    <label for="dni" class="col-sm-1 col-form-label">YO</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="dni" placeholder="Nombre completo">
+                    </div>
+                    <label for="dni" class="col-sm-3 col-form-label">Identificado con D.N.I </label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="dni" placeholder="Número de DNI">
+                    </div>
+                </div>
+                <p>
+                    he leído la información de la parte anterior, la entiendo completamente y realizaré la TRT sabiendo que no EXISTE CURA para la Tinnitus.
+                </p>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="fecha-nacimiento">Fecha:</label>
+                        <input type="date" class="form-control" id="fecha-nacimiento">
+                    </div>
+                    <div class="form-group col">
+                        <label for="firma">Firma:</label>
+                        <div class="border rounded p-2">
+                        <canvas id="campo-firma" width="400" height="100"></canvas>
+                     </div>
+                    </div>
+                    <div class="form-group col">
+                        <label for="apellido">D.N.I :</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Numero de DNI">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+<br>
+<br>
+
+    <div class="text-center">
+        <a href="Acuerdo_ingreso.html" class="btn btn-primary mx-auto">ACEPTAR
+        </a>
+    </div>
+
+
+
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Scripts/Cabecera.js"></script>    
+    <script>
+        // JavaScript para establecer la fecha actual en el campo de fecha
+        const fechaActual = new Date().toISOString().split('T')[0];
+        document.getElementById('fecha-nacimiento').value = fechaActual;
+    </script>
+    <script>
+        var canvas = document.getElementById('campo-firma');
+        var signaturePad = new SignaturePad(canvas, {
+            backgroundColor: 'white',
+            penColor: 'black',
+        });
+    </script>
+    
+</body>
+</html>
