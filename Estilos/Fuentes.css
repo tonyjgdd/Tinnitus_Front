@@ -18,3 +18,22 @@
     background-color: white;
     /* Otros estilos de tu elección */
 }
+.barra{
+    margin-top: 10px;
+    
+}
+
+.navbar{
+    background-color: rgb(76, 224, 247);
+}
+
+
+@media screen and (max-width:768px) {
+    .logoprincipal{
+        display: flex;
+        justify-content: center;
+    }
+    .logotipo{
+        width: 300px;
+    }
+}
