@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Pacientes</title>
-    <!-- Incluye la biblioteca de Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="Estilos/imagenes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 </head>
 
@@ -16,7 +17,7 @@
          <!-- Barra de navegacion / Logo-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="cont-cabecera">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="dashboard.html">
                 <img src="img/logo.png" alt="MiSitioWeb" width="200">
             </a>
 
@@ -55,27 +56,31 @@
         <section class="home" id="cont-home">
 
             <div class="container mt-5 border p-5">
-
+                <h1 class="text-center">
+                    <i class="bi bi-person-square" style="font-size: 3rem;"></i>
+                </h1>
+                
                 <form action="Acuerdo_ingreso.html" method="get">
-                    <div class="form-group">
+                    <div class="group">
                         <label for="fecha-nacimiento">Fecha:</label>
                         <input type="date" class="form-control" id="fecha-actual" required>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col">
+                    <br>
+                    <div class="row">
+                        <div class="group col">
                             <label for="nombre">Nombre:</label>
                             <input type="text" class="form-control" id="nombre" placeholder="Nombre del paciente"
                                 required>
                         </div>
-                        <div class="form-group col">
+                        <div class="group col">
                             <label for="apellido">Apellido:</label>
                             <input type="text" class="form-control" id="apellido" placeholder="Apellido del paciente"
                                 required>
                         </div>
                     </div>
-
-                    <div class="form-row">
-                        <div class="form-group col">
+<br>
+                    <div class="row">
+                        <div class="group col">
                             <label for="estado_civil">Estado Civil:</label>
                             <select class="form-control" id="estado_civil" required>
                                 <option value="" disabled selected>Selecciona una opción</option>
@@ -87,14 +92,14 @@
                         </div>
 
 
-                        <div class="form-group col">
+                        <div class="group col">
                             <label for="dni">DNI:</label>
                             <input type="number" class="form-control" id="dni" placeholder="Número de DNI" required>
                         </div>
                     </div>
-
-                    <div class="form-row">
-                        <div class="form-group col">
+<br>
+                    <div class="row">
+                        <div class="group col">
                             <label for="genero">Género:</label>
                             <select class="form-control" id="genero" required>
                                 <option value="" disabled selected>Selecciona una opción</option>
@@ -103,20 +108,20 @@
                                 <option value="otro">Otro</option>
                             </select>
                         </div>
-                        <div class="form-group col">
+                        <div class="group col">
                             <label for="edad">EDAD:</label>
                             <input type="number" class="form-control" id="edad" placeholder="Edad actual" required>
 
                         </div>
-                        <div class="form-group col">
+                        <div class="group col">
                             <label for="num_hijos">NUM. DE HIJOS:</label>
                             <input type="number" class="form-control" id="num_hijos" placeholder="Cantidad de hijos"
                                 required>
 
                         </div>
                     </div>
-
-                    <div class="form-row">
+<br>
+                    <div class="row">
                         <div class="form-group col">
                             <label for="lugar_residencia">Lugar de Residencia:</label>
                             <input type="text" class="form-control" id="lugar_residencia"
@@ -129,10 +134,28 @@
                     </div>
 
 
-
+<br>
 
                     <div class="text-center">
-                        <button class="btn btn-primary mx-auto" id="regibtn">Registrar Paciente</button>
+                        <button class="btn btn-primary mx-auto" id="regibtn" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                            Registrar Paciente</button>
+                    </div>
+                    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="confirmModalLabel">Confirmación de Envío</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ¿Estás seguro de enviar?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </form>
@@ -149,7 +172,7 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="Scripts/fecha.js   "></script>
     <script src="Scripts/Cabecera.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

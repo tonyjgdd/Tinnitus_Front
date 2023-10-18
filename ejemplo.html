@@ -1,282 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Pacientes</title>
-    <!-- Incluye la biblioteca de Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos/Fuentes.css">
+    <title>Card con Secciones Ocultas</title>
+    <style>
+        .card {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
 </head>
-
 <body>
+    <div class="card">
+        <button onclick="showSection('section1')">Sección 1</button>
+        <button onclick="showSection('section2')">Sección 2</button>
+        <button onclick="showSection('section3')">Sección 3</button>
 
-    <header class="container" id="cont-cabecera">
-        <div class="row mt-4">
-            <div class="logoprincipal p-md-0">
-                <img src="img/Logo_tinnitus.png" alt="">
-            </div>
-
+        <div class="section" id="section1">
+            <h3>Sección 1</h3>
+            <p>Contenido de la sección 1.</p>
         </div>
-    </header>
-    <!-- Barra de navegacion / Davy Hipolito-->
-    <div class="barra" id="cont-barra">
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid subtitulo d-flex justify-content-center">
-                TEST DE INGENIERIA APLICADA
-            </div>
-        </nav>
+        <div class="section" id="section2">
+            <h3>Sección 2</h3>
+            <p>Contenido de la sección 2.</p>
+        </div>
+        <div class="section" id="section3">
+            <h3>Sección 3</h3>
+            <p>Contenido de la sección 3.</p>
+        </div>
     </div>
-    <!-- fsdsssssssssssssssssssss -->
-    <main>
-        <section class="home" id="cont-home">
-
-            <div class="container">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>PROBLEMAS DE OÍDOS</th>
-                            <th>NO </th>
-                            <th>SI </th>
-                            <th>NO SÉ</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Sordera</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <tr>
-                            <td>Oído taponado</td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                            <td><button class="btn btn-primary toggle-button" style="font-size: 5px; padding: 20px 30px;"></button></td>
-                        </tr>
-                        <!-- Puedes agregar más filas aquí -->
-                    </tbody>
-                </table>
-            </div>
-
-
-           
-
-
-
-
-
-        </section>
-        <section>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            MENÚ
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="index.html">NOSOTROS</a>
-                            <a class="dropdown-item" href="index.html">SERVICIOS</a>
-                            <a class="dropdown-item" href="index.html">PRODUCTOS</a>
-                            <a class="dropdown-item" href="Login.html">LOGIN</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            
-        </section>
-    </main>
-
-
-
-
-    <br>
-    <br>
-
-    <div class="text-center">
-        <a href="Registro.html" class="btn btn-primary mx-auto">ACEPTAR
-        </a>
-    </div>
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="Scripts/Cabecera.js"></script>
-    
-  <script>
-    // Script para manejar eventos de los botones de alternancia
-document.addEventListener("DOMContentLoaded", function() {
-    var toggleButtons = document.querySelectorAll('.toggle-button');
-
-    toggleButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            if (button.textContent === 'x') {
-                button.textContent = '<';
-                button.classList.remove('btn-success');
-                button.classList.add('btn-primary');
-
-                // Deshabilitar otros botones en la misma fila
-                var row = button.closest('tr'); // Obtén la fila actual
-                var otherButtons = row.querySelectorAll('.toggle-button');
-
-                otherButtons.forEach(function(otherButton) {
-                    if (otherButton !== button) {
-                        otherButton.disabled = true;
-                    }
-                });
-            } else {
-                button.textContent = 'x';
-                button.classList.remove('btn-primary');
-                button.classList.add('btn-success');
-
-                // Habilitar otros botones en la misma fila
-                var row = button.closest('tr'); // Obtén la fila actual
-                var otherButtons = row.querySelectorAll('.toggle-button');
-
-                otherButtons.forEach(function(otherButton) {
-                    if (otherButton !== button) {
-                        otherButton.disabled = false;
-                    }
-                });
-            }
-        });
-    });
-});
-
-  </script>
-
-
-
-
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
 </body>
-
 </html>
