@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimarket SuperStore</title>
+    <!-- Agrega el enlace al archivo CSS de Bootstrap -->
+    <style>
+        .content {
+            margin-top: 110px;
+            /* Ajusta el valor según tu necesidad para crear espacio entre la barra de navegación y el contenido */
+
+        }
+
+        .navbar-brand {
+            display: inline-block;
+        }
+
+        .navbar2 {
+            box-shadow: 0px 3px 6px rgba(2, 1, 1, 0.1);
+            /* Añade una sombra con un desplazamiento vertical de 3px y desplazamiento horizontal de 0px */
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <section>
+            <nav class="navbar navbar2 navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt="Tinnituslogo" width="200">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">SERVICIOS</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Login.html">
+                                    <button class="btn btn-primary">LOGIN</button>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </section>
+    </header>
+    <main class="content">
+      
+    </main>
+
+
+
+
+    <!-- Scripts de Bootstrap y otros archivos JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Obtén todos los botones de opción
+        var botonesOpcion = document.querySelectorAll(".opcion");
+
+        // Agrega un evento de clic a cada botón
+        botonesOpcion.forEach(function (boton) {
+            boton.addEventListener("click", function () {
+                // Obten el número de opción seleccionado
+                var opcionSeleccionada = boton.getAttribute("data-opcion");
+
+                // Desactiva todos los botones
+                botonesOpcion.forEach(function (b) {
+                    b.classList.remove("active");
+                });
+
+                // Activa el botón seleccionado
+                boton.classList.add("active");
+
+                // Cambia la pregunta según la opción seleccionada
+                var nuevaPregunta = "Nueva pregunta para la opción " + opcionSeleccionada;
+                document.getElementById("texto-pregunta").textContent = nuevaPregunta;
+            });
+        });
+
+    </script>
+</body>
+
+</html>
