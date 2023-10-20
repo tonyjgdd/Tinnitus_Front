@@ -48,7 +48,7 @@ header{
     max-height: 100px; /* Establece la altura máxima, por ejemplo, 100px */
 }
 .menu__side{
-    width: 80px;
+    width: 90px;
     height: 100%;
     background: #1783db;
     position: fixed;

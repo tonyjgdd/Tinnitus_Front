@@ -22,3 +22,7 @@
 .navbar{
     background-color:  rgb(215, 248, 254);
 }
+.btn-color {
+    background-color:  #c3d5e8; /* Cambia el color de fondo del botón activo */
+    /* Cambia el color del texto del botón activo */
+}
