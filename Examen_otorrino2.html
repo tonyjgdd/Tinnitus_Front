@@ -42,6 +42,64 @@
         <section class="home" id="cont-home">
 
             <form action="examen_otorrino3.html" >
+
+                <div class="container mt-2 border p-3" id="container0">
+                    <h1 class="h5 texto-pregunta">Datos del Paciente:</h1>
+                    <br>
+                    <div class="row mb-3">
+                        <label for="dniInput" class="col-form-label col-md-3">Ingrese DNI del paciente:</label>
+                        <div class="col-md-6">
+                            <input type="number" id="dniInput" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary" onclick="cargarDatos()">Cargar</button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                 
+                                    <tbody >
+                                        <tr>
+                                            <td class="col-md-1">Fecha:</td>
+                                            <td><input type="date" id="fechaInput" style="border: none; outline: none;" readonly></td>
+                                        
+                                    
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-1">Nombre:</td>
+                                            <td><input type="text" id="nombreInput" style="border: none; outline: none;" readonly></td>
+                                   
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-1">Apellido:</td>
+                                            <td><input type="text" id="apellidoInput" style="border: none; outline: none;" readonly></td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-1">Edad:</td>
+                                            <td><input type="number" id="edadInput" style="border: none; outline: none;" readonly></td>
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-1">Ocupacion:</td>
+                                            <td><input type="text" id="ocupacionInput" style="border: none; outline: none;" readonly></td>
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-1">Telefono:</td>
+                                            <td><input type="number" id="telefonoInput" style="border: none; outline: none;" readonly></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+
                 <!-- antecedentes -->
                 <div class="container mt-2 border p-3" id="container1">
                     <h1 class="h5 texto-pregunta">I. ANTECEDENTES:</h1>
