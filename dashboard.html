@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú lateral responsive - MagtimusPro</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="Estilos/barra_lateral.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -17,19 +19,21 @@
             border: 1px solid #0594f3;
             padding: 20px;
         }
+
         .section {
             display: none;
         }
+
         .active {
             display: block;
         }
-    
     </style>
-   
-  
+
+
 </head>
+
 <body id="body">
-    
+
     <header>
         <button class="btn" id="btn_open">
             <i class="bi bi-justify"></i>
@@ -40,17 +44,17 @@
     <button class="btn ms-auto">
          <i class="bi bi-person-square"></i>
          MiCuenta
-     </button> --> 
-        
+     </button> -->
+
     </header>
 
     <div class="menu__side" id="menu_side">
 
-         <div class="img ">
+        <div class="img ">
             <img src="img/logo_sf2.png" alt="">
         </div>
 
-        <div class="options__menu">	
+        <div class="options__menu">
             <button class="btn ">
                 <div class="option text-white">
                     <i class="bi bi-house text-white" title="Inicio"></i>
@@ -65,21 +69,21 @@
                     </div>
                 </button>
             </a>
-            
+
             <button class="btn" onclick="showSection('section1')">
                 <div class="option text-white">
                     <i class="bi bi-card-text text-white" title="formatos"></i>
                     <h4>Documentos</h4>
                 </div>
             </button>
-            
+
             <button class="btn">
                 <div class="option text-white ">
                     <i class="bi bi-calendar2-date-fill text-white" title="calendario_pacientes"></i>
                     <h4>Calendario</h4>
                 </div>
             </button>
-            
+
             <button class="btn">
                 <div class="option text-white">
                     <i class="bi bi-clipboard-check-fill text-white" title="Contacto"></i>
@@ -95,15 +99,15 @@
                     </div>
                 </a>
             </button>
-            
-            
+
+
         </div>
 
     </div>
 
     <main>
         <div class="card">
-    
+
             <div class="section" id="section1">
                 <h1>
                     DOCUMENTOS - FORMATOS
@@ -111,9 +115,11 @@
                 <br><br>
                 <div class="row">
                     <div class="col-md-4">
-                        <button class="btn btn-primary mb-2">
-                            Cuestionarios Valorativos Tinnitus
-                        </button>
+                        <a href="1_CuestionariosValorativos.html">
+                            <button class="btn btn-primary mb-2">
+                                Cuestionarios Valorativos Tinnitus
+                            </button>
+                        </a>
                         <a href="Examen_otorrino2.html">
                             <button class="btn btn-primary mb-2 ">
                                 Examen Otorrinolaringológico
@@ -133,12 +139,15 @@
                             </button>
                         </a>
 
-                        <button class="btn btn-primary mb-2">
-                            Terapia de Reentrenamiento Tinnitus
-                        </button>
+                        <a href="terapia_reentrenamiento.html">
+                            <button class="btn btn-primary mb-2">
+                                Terapia de Reentrenamiento Tinnitus
+                            </button>
+
+                        </a>
                     </div>
                     <div class="col-md-4">
-                       
+
                         <button class="btn btn-primary">
                             Psicologia
                         </button>
@@ -151,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            
+
 
             <div class="section" id="section2">
                 <h3>Sección 2</h3>
@@ -164,13 +173,16 @@
         </div>
     </main>
     <script src="Scripts/Barra_lateral.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
         function showSection(sectionId) {
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => section.classList.remove('active'));
             document.getElementById(sectionId).classList.add('active');
         }
-</script>
+    </script>
 </body>
+
 </html>

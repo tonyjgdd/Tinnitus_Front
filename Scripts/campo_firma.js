@@ -20,14 +20,3 @@ botonBorrar.addEventListener('click', function () {
     canvas.getContext('2d').drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
 });
 
-
-function cargarImagen(input, idVistaPrevia) {
-    const vistaPrevia = document.getElementById(idVistaPrevia);
-    if (input.files && input.files[0]) {
-        const lector = new FileReader();
-        lector.onload = function (e) {
-            vistaPrevia.src = e.target.result;
-        };
-        lector.readAsDataURL(input.files[0]);
-    }
-}
