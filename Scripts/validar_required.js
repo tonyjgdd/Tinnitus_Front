@@ -1,4 +1,5 @@
 
+
         document.getElementById('finalizarButton').addEventListener('click', function () {
     var form = document.querySelector('form');
     if (form.checkValidity()) {
