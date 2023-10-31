@@ -162,20 +162,20 @@
                                     <th class="text-secondary">
                                         Pan integral (
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="claras" id="clarasSi" value="si">
+                                            <input class="form-check-input" type="radio" name="pan_integral" id="pan_integral_Si" value="si">
                                             <label class="form-check-label" for="clarasSi">Sí</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="claras" id="clarasNo" value="no">
+                                            <input class="form-check-input" type="radio" name="pan_integralno" id="pan_integral_Sino" value="no">
                                             <label class="form-check-label" for="clarasNo">No</label>
                                         </div>
                                         ) , Tostada integral (
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="yema" id="yemaSi" value="si">
+                                            <input class="form-check-input" type="radio" name="tostada_integral" id="tostada_si" value="si">
                                             <label class="form-check-label" for="yemaSi">Sí</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="yema" id="yemaNo" value="no">
+                                            <input class="form-check-input" type="radio" name="tostada_integralno" id="tostada_no" value="no">
                                             <label class="form-check-label" for="yemaNo">No</label>
                                         </div>
                                         ). Arroz, quinua, trigo, fideos, sémola , morón ,Avena, maca, siete semillas...
@@ -294,7 +294,33 @@
 
 
                     </div>
+                </div><br>
+                
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" id="finalizarButton">
+                        FINALIZAR
+                    </button>
+                    <a href="javascript:history.back()" type="button" class="btn btn-primary">REGRESAR</a>
+                    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="confirmModalLabel">Confirmación</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ¿Estás seguro de que deseas finalizar el formulario?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-primary">Finalizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <br><br>
+
             </form>
 
         </section>
@@ -308,6 +334,7 @@
         crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
         <script src="Scripts/Cabecera.js"></script>
+        <script src="Scripts/validar_required.js"></script>
         <script src="Scripts/Cargar_Sello_firma.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
