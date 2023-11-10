@@ -1,6 +1,3 @@
-
-  
-
 var canvas = document.getElementById('campo-firma');
 var signaturePad = new SignaturePad(canvas, {
     backgroundColor: 'transparent', // Fondo transparente
@@ -9,14 +6,16 @@ var signaturePad = new SignaturePad(canvas, {
 
 // Configura la imagen de fondo
 var backgroundImage = new Image();
-backgroundImage.src = 'img/audiometria.png' // Cambia esto a la ruta correcta de tu imagen de fondo
+backgroundImage.src = 'img/audiometria.jpg' // Cambia esto a la ruta correcta de tu imagen de fondo
 backgroundImage.onload = function () {
-    canvas.getContext('2d').drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+    canvas.width = backgroundImage.width;
+    canvas.height = backgroundImage.height;
+    canvas.getContext('2d').drawImage(backgroundImage, 0, 0);
 };
 
 var botonBorrar = document.getElementById('borrarCanvas');
 botonBorrar.addEventListener('click', function () {
     signaturePad.clear();
-    canvas.getContext('2d').drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+    canvas.getContext('2d').drawImage(backgroundImage, 0, 0);
 });
 
